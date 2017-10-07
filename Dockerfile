@@ -1,11 +1,10 @@
-FROM alpine:3.4
+FROM alpine:3.6
 
 # https://hub.docker.com/_/node/
-# https://github.com/nodejs/docker-node/blob/master/6.10/alpine/Dockerfile
 MAINTAINER Aaron Bolanos <aaron@liyyt.com>
 
 ENV NPM_CONFIG_LOGLEVEL info
-ENV NODE_VERSION 8.0.0
+ENV NODE_VERSION 8.6.0
 
 RUN adduser -D -u 1000 node \
     && apk add --no-cache \
